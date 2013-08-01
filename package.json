@@ -1,0 +1,7 @@
+{
+    "name": "leap-motion-signature-recognition",
+    "version": "0.0.0",
+    "dependencies": {
+        "leapjs": "0.2.0"
+    }
+}
