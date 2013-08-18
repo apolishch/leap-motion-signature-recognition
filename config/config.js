@@ -4,7 +4,7 @@ module.exports = function(app, express){
     app.use(express.static(__dirname + '/../public'));
     app.use(require('asset-pipeline')({
         server: app,
-        assets: '/../public',
-        cache: '/../cache'
+        assets: '../assets',
+        cache: '../cache'
     }));
 }
