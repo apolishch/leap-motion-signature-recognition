@@ -7,6 +7,6 @@
     "ejs": "0.8.4"
   },
   "devDependencies": {
-    "asset-pipeline": "~0.3.2"
+    "connect-assets": "~2.5.2"
   }
 }
