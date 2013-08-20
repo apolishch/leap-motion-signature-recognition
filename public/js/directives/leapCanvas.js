@@ -5,12 +5,19 @@ angular.module('SignatureRecognitionApp.directives')
     var directiveDefinitionObject = {
         restrict: 'A',
         scope:{
-            'target-service': '@targetService'
+            'targetService': '@targetService',
+            'leapAttributes': '@leapAttributes',
+            'port': '@port'
         },
         controller: "LeapMotionController",
-        link: function postLink(scope, element, attrs){
-
-        }
+        link: {
+            pre: function(scope, element, attrs){
+                scope.leapAttributes = JSON.parse(scope.leapAttributes.replace(/(['"])?([a-zA-Z0-9]+)(['"])?:/g, '"$2":'));
+            },
+            post: function(scope, element, attrs){
+            }
+        },
+        templateUrl: "/js/templates/test.html"
     }
     return directiveDefinitionObject;
 }]);
