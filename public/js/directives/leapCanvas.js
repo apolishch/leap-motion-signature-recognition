@@ -5,7 +5,7 @@ angular.module('SignatureRecognitionApp.directives')
     var directiveDefinitionObject = {
         restrict: 'A',
         scope:{
-            'target-service': '@target-service'
+            'target-service': '@targetService'
         },
         controller: "LeapMotionController",
         link: function postLink(scope, element, attrs){

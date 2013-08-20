@@ -2,12 +2,10 @@
   "name": "leap-motion-signature-recognition",
   "version": "0.0.0",
   "dependencies": {
-    "leapjs": "0.2.0",
-    "express": "3.3.4",
-    "ejs": "0.8.4",
-    "socket.io": "0.9.16"
+    "express": "~3.3.4",
+    "ejs": "~0.8.4",
+    "ws": "~0.4.28"
   },
   "devDependencies": {
-    "connect-assets": "~2.5.2"
   }
 }
